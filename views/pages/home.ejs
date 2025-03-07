@@ -1,0 +1,153 @@
+<!-- filepath: /Users/siddhant/Desktop/ffsd_project/ffsd/views/pages/home.ejs -->
+<%- include('../partials/header') %>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section text-center py-5" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('/images/gym-hero.jpg'); background-size: cover; background-position: center; min-height: 80vh; display: flex; align-items: center;">
+    <div class="container py-5">
+      <h1 class="display-3 fw-bold mb-4">Welcome to <span class="text-white">Fit</span><span class="text-danger">Sync</span></h1>
+      <p class="lead text-white mb-5">Your ultimate solution for fitness tracking, personal training sessions, and complete workout management</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="/login" class="btn btn-danger btn-lg"><i class="fas fa-sign-in-alt me-2"></i>Get Started</a>
+        <a href="#features" class="btn btn-outline-light btn-lg"><i class="fas fa-info-circle me-2"></i>Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-danger mb-5">Why Choose FitSync?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-4">
+            <div class="card-body">
+              <i class="fas fa-calendar-check text-danger mb-3" style="font-size: 3rem;"></i>
+              <h3 class="card-title">Smart Scheduling</h3>
+              <p class="card-text text-light">Book training sessions with your preferred trainers with just a few clicks. Manage your fitness schedule effortlessly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-4">
+            <div class="card-body">
+              <i class="fas fa-dumbbell text-danger mb-3" style="font-size: 3rem;"></i>
+              <h3 class="card-title">Personalized Workouts</h3>
+              <p class="card-text text-light">Get customized workout plans designed specifically for your fitness goals and experience level.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-4">
+            <div class="card-body">
+              <i class="fas fa-utensils text-danger mb-3" style="font-size: 3rem;"></i>
+              <h3 class="card-title">Nutrition Tracking</h3>
+              <p class="card-text text-light">Monitor your daily calorie intake and maintain balanced nutrition with our intelligent diet planning tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-danger mb-5">What Our Members Say</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex mb-3">
+                <i class="fas fa-quote-left text-danger fa-2x me-2"></i>
+                <div>
+                  <p class="card-text text-light">FitSync completely transformed my approach to fitness. The personalized workout plans and trainer booking system are game changers!</p>
+                </div>
+              </div>
+              <p class="text-muted mb-0">- Sarah J., Member since 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex mb-3">
+                <i class="fas fa-quote-left text-danger fa-2x me-2"></i>
+                <div>
+                  <p class="card-text text-light">As a trainer, FitSync makes it easy to manage my schedule and connect with clients. The platform is intuitive and powerful!</p>
+                </div>
+              </div>
+              <p class="text-muted mb-0">- Mike R., Fitness Trainer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex mb-3">
+                <i class="fas fa-quote-left text-danger fa-2x me-2"></i>
+                <div>
+                  <p class="card-text text-light">The nutrition tracking feature helped me achieve my weight loss goals. I've lost 20 pounds in just 3 months using FitSync!</p>
+                </div>
+              </div>
+              <p class="text-muted mb-0">- David T., Premium Member</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-danger mb-4">Ready to transform your fitness journey?</h2>
+          <p class="text-light mb-5">Join thousands of members who have already improved their health and fitness with FitSync.</p>
+          <div class="d-grid gap-2 d-md-block">
+            <a href="/register" class="btn btn-danger btn-lg me-md-2">Join Now <i class="fas fa-arrow-right ms-2"></i></a>
+            <a href="/about" class="btn btn-outline-light btn-lg">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Preview -->
+  <section class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-danger mb-5">Powerful Features</h2>
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="/images/dashboard-preview.jpg" alt="Dashboard Preview" class="img-fluid rounded shadow-lg">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-white">Comprehensive Dashboard</h3>
+          <p class="text-light">Track your fitness progress, manage upcoming sessions, and view your nutrition data all in one place.</p>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">Real-time progress tracking</li>
+            <li class="list-group-item">Visual workout statistics</li>
+            <li class="list-group-item">Integrated calendar with reminders</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="/images/mobile-preview.jpg" alt="Mobile App Preview" class="img-fluid rounded shadow-lg">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-white">Mobile Friendly Experience</h3>
+          <p class="text-light">Access FitSync on any device - manage your fitness journey whether you're at home or on the go.</p>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">Responsive design for all devices</li>
+            <li class="list-group-item">Get notifications about upcoming sessions</li>
+            <li class="list-group-item">Track workouts directly from your phone</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>
