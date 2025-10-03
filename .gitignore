@@ -117,3 +117,45 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+.history/
+.vs/
+*.iml
+
+# Environment and local config
+.env*
+!sample.env
+
+# Build outputs
+dist/
+build/
+tmp/
+temp/
+
+# Package manager and tool caches
+.pnpm-store/
+.turbo/
+.prettiercache
+
+# Secrets and certificates
+*.pem
+*.key
+*.crt
+*.pfx
+
+# Databases and local storage
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Editor swap/backup files
+*.swp
+*.swo
+*.orig

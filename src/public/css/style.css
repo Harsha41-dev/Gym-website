@@ -1,0 +1,103 @@
+/* Cart Icon Styles */
+.nav-link .bi-cart3 {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.2s;
+}
+
+/* Main navigation cart icon */
+.navbar-nav.me-auto .nav-link .bi-cart3 {
+    font-size: 1rem;
+}
+
+/* Header cart icon */
+.navbar-nav:not(.me-auto) .nav-link .bi-cart3 {
+    font-size: 1.2rem;
+}
+
+.nav-link:hover .bi-cart3 {
+    color: #fff;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.35rem;
+    border-radius: 50%;
+    background-color: #dc3545;
+    color: white;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header cart count badge */
+.navbar-nav:not(.me-auto) .cart-count {
+    top: -8px;
+    right: -8px;
+    font-size: 0.7rem;
+    min-width: 18px;
+    height: 18px;
+}
+
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Product Card Styles */
+.product-card {
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Cart Page Styles */
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.quantity-control {
+    width: 100px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-image {
+        height: 150px;
+    }
+    
+    .cart-count {
+        top: -3px;
+        right: -3px;
+    }
+    
+    .navbar-nav:not(.me-auto) .cart-count {
+        top: -5px;
+        right: -5px;
+    }
+} 

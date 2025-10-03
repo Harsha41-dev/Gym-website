@@ -108,24 +108,3 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
-  
-  // Show loading spinner during page transitions
-  window.addEventListener('beforeunload', function() {
-    const loadingOverlay = document.createElement('div');
-    loadingOverlay.style.position = 'fixed';
-    loadingOverlay.style.top = '0';
-    loadingOverlay.style.left = '0';
-    loadingOverlay.style.width = '100%';
-    loadingOverlay.style.height = '100%';
-    loadingOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-    loadingOverlay.style.display = 'flex';
-    loadingOverlay.style.justifyContent = 'center';
-    loadingOverlay.style.alignItems = 'center';
-    loadingOverlay.style.zIndex = '9999';
-    
-    const spinner = document.createElement('div');
-    spinner.classList.add('spinner');
-    loadingOverlay.appendChild(spinner);
-    
-    document.body.appendChild(loadingOverlay);
-  });
